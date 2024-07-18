@@ -38,4 +38,9 @@
       "last 1 safari version"
     ]
   }
+  "homepage": "https://Thollarkings.github.io/ejtos-react_budget_app/",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
 }
