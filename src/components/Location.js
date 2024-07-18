@@ -28,11 +28,12 @@ const Location = () => {
         <div style={boxStyle}>
             <label htmlFor="Location">Select Currency:</label>
             <select name="Location" id="Location" onChange={event => changeLocation(event.target.value)}>
+                <option value="₦">(₦) Naira</option>
                 <option value="$">($) Dollars</option>
                 <option value="£">(£) Pounds</option>
                 <option value="₹">(₹) Rupees</option>
                 <option value="€">(€) Euro</option>
-            </select>
+                </select>
         </div>
     );
 };
