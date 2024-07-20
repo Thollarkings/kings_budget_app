@@ -3,22 +3,29 @@
 .expense-item {
     background: linear-gradient(45deg, #9575CD, #D1C4E9); /* Light purple gradient */
     color: black;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.expense-name, .expense-cost, .expense-buttons {
-    flex: 1;
+.expense-name {
+    flex: 0.15; /* Adjust flex for better spacing */
     text-align: left;
-    margin: 5px 0;
+    margin-right: 0px; /* Add margin for spacing */
+}
+
+.expense-cost {
+    flex: 0.2; /* Adjust flex for better spacing */
+    text-align: left;
+    margin-left: 0px; /* Add margin for spacing */
 }
 
 .expense-buttons {
+    flex: 0.51; /* Adjust flex for better spacing */
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -38,8 +45,8 @@
 }
 
 .expense-icon.delete {
-    background-color: red;
-    color: white;
+    background-color: rgb(246, 182, 229);
+    color: rgb(0, 0, 0);
     border-radius: 5px;
 }
 
