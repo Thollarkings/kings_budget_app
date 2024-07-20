@@ -2,9 +2,10 @@
 
 /* Style for table headers */
 .table th, .table td {
-    padding: 7px;
+    padding: 2px;
     text-align: left;
     border: none; /* Remove the border */
+    margin-right: 50px;
 }
 
 /* Mobile styles */
@@ -33,7 +34,7 @@
         content: attr(data-label);
         position: absolute;
         left: 10px;
-        width: 50%;
+        width: 40%;
         padding-right: 10px;
         text-align: left;
         font-weight: bold;

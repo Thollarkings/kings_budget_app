@@ -3,34 +3,36 @@
 .expense-item {
     background: linear-gradient(45deg, #9575CD, #D1C4E9); /* Light purple gradient */
     color: black;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px; /* Introduce gap */
+    gap: 15px; /* Added gap between columns */
 }
 
 .expense-name {
-    flex: 0.15; /* Adjust flex for better spacing */
+    flex: 0.2;
     text-align: left;
-    margin-right: 0px; /* Add margin for spacing */
-    margin-left: 10px; /* Add margin for spacing to the left*/
+    margin: 0 15px; /* Separate margin for expense-name */
 }
 
 .expense-cost {
-    flex: 0.2; /* Adjust flex for better spacing */
+    flex: 0.3;
     text-align: left;
-    margin-left: 40px; /* Add margin for spacing */
+    margin: 2px; /* Separate margin for expense-cost */
 }
 
 .expense-buttons {
-    flex: 0.5; /* Original flex value */
+    flex: 0.6;
+    text-align: left;
+    margin-left: 20px; /* Margin to the left for expense-buttons */
+    margin-right: 50px; /* Margin to the right for expense-buttons */
     display: flex;
-    gap: 230px; /* Original gap value */
-    margin-right: 75px; /* Add margin to the right */
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .expense-icon {
@@ -43,12 +45,12 @@
 }
 
 .expense-icon.decrease {
-    color: rgb(79, 21, 21);
+    color: rgb(98, 12, 12);
 }
 
 .expense-icon.delete {
-    background-color: rgba(246, 182, 229, 0);
-    color: rgba(208, 10, 10, 0.635);
+    background-color: rgba(245, 185, 229, 0);
+    color: rgba(211, 6, 6, 0.573);
     border-radius: 5px;
 }
 
@@ -57,17 +59,17 @@
     .expense-item {
         flex-direction: column;
         align-items: flex-start;
+        gap: 10px; /* Adjusted gap for mobile */
     }
 
     .expense-name, .expense-cost, .expense-buttons {
-        width: 100%;
+        width: 50%;
         text-align: left;
-        margin-left: 0;
-        margin-right: 10;
+        margin: 0; /* Removed margin for mobile */
     }
 
     .expense-buttons {
         justify-content: flex-start;
-        gap: 10px;
+        gap: 5px;
     }
 }
