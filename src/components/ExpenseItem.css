@@ -10,25 +10,27 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px; /* Introduce gap */
 }
 
 .expense-name {
     flex: 0.15; /* Adjust flex for better spacing */
     text-align: left;
     margin-right: 0px; /* Add margin for spacing */
+    margin-left: 10px; /* Add margin for spacing to the left*/
 }
 
 .expense-cost {
     flex: 0.2; /* Adjust flex for better spacing */
     text-align: left;
-    margin-left: 0px; /* Add margin for spacing */
+    margin-left: 40px; /* Add margin for spacing */
 }
 
 .expense-buttons {
-    flex: 0.51; /* Adjust flex for better spacing */
+    flex: 0.5; /* Original flex value */
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    gap: 230px; /* Original gap value */
+    margin-right: 75px; /* Add margin to the right */
 }
 
 .expense-icon {
@@ -41,12 +43,12 @@
 }
 
 .expense-icon.decrease {
-    color: brown;
+    color: rgb(79, 21, 21);
 }
 
 .expense-icon.delete {
-    background-color: rgb(246, 182, 229);
-    color: rgb(0, 0, 0);
+    background-color: rgba(246, 182, 229, 0);
+    color: rgba(208, 10, 10, 0.635);
     border-radius: 5px;
 }
 
@@ -61,6 +63,7 @@
         width: 100%;
         text-align: left;
         margin-left: 0;
+        margin-right: 10;
     }
 
     .expense-buttons {
