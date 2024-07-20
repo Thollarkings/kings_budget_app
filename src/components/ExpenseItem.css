@@ -1,0 +1,63 @@
+/* ExpenseItem.css */
+
+.expense-item {
+    background: linear-gradient(45deg, #9575CD, #D1C4E9); /* Light purple gradient */
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.expense-name, .expense-cost, .expense-buttons {
+    flex: 1;
+    text-align: left;
+    margin: 5px 0;
+}
+
+.expense-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.expense-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.expense-icon.increase {
+    color: green;
+}
+
+.expense-icon.decrease {
+    color: brown;
+}
+
+.expense-icon.delete {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .expense-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .expense-name, .expense-cost, .expense-buttons {
+        width: 100%;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .expense-buttons {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+}
