@@ -1,5 +1,5 @@
 {
-  "name": "budget-allocation",
+  "name": "kings_budget_app", 
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -41,5 +41,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://Thollarkings.github.io/ejtos-react_budget_app/"
+  "homepage": "https://Thollarkings.github.io/kings_budget_app/" 
 }
