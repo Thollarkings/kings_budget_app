@@ -1,0 +1,280 @@
+/* General Styles */
+.container {
+    background: linear-gradient(45deg, #9575CD, #D1C4E9); /* Light purple gradient */
+    color: rgb(63, 1, 1);
+    padding: 9px 5px 0px 7px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Adjusted for consistency */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.548);
+}
+
+#footer {
+    text-align: center;
+    margin-left: 6rem;
+}
+
+
+/* Box Styles */
+.box {
+    background: linear-gradient(45deg, #6a1b9a, black);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    max-width: 400px;
+    margin: 20px auto;
+    
+}
+
+.box-budget {
+    padding: 20px; /* Override for Budget component */
+    display: flex;
+    align-items: center;
+}
+
+/* Header Box Style */
+.header-box {
+    background:transparent;
+    color: rgb(0, 0, 0);
+    padding: 20px 15px 0 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.308);
+    border: 1px solid rgba(16, 1, 44, 0);
+    height: 5rem
+ }
+
+ .budgetAllcCont {
+    background-color: #69078f00;
+    color: rgb(63, 1, 1);
+    padding: 9px 5px 0px 7px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Adjusted for consistency */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.548);
+ }
+
+ .budgetAllcCont h5{
+    text-align: center;
+ }
+
+/* Table Styles */
+.table {
+    width: 100%; /* Ensure the table takes full width */
+}
+
+.table th, .table td {
+    padding: 2px;
+    text-align: left;
+    border: none; /* Remove the border */
+    margin-right: 5px;
+    color: black;
+}
+
+/* Label Styles */
+.label {
+    margin-bottom: 10px; /* Space for labels */
+    margin-right: 10px; /* For Budget component label */
+}
+
+/* Input Styles */
+.input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+}
+
+/* Button Styles */
+.button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #68078f, rgb(7, 1, 39), #68078f);
+    border: 1px solid rgb(117, 71, 138);
+    color: white;
+    cursor: pointer;
+}
+
+.btn-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #68078f, rgb(7, 1, 39), #68078f);
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    cursor: pointer;
+}
+
+/* Warning Styles */
+.warning {
+    color: yellow;
+    margin-left: 10px;
+}
+
+/* Expense Item Styles */
+.expense-item {
+    background: linear-gradient(45deg, #9575CD, #D1C4E9); /* Light purple gradient */
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px; /* Added gap between columns */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.39);
+    border: 1px solid rgba(16, 1, 44, 0.295);
+}
+
+.expense-name {
+    flex: 0.2;
+    text-align: left;
+    margin: 0 15px; /* Separate margin for expense-name */
+}
+
+.expense-cost {
+    flex: 0.3;
+    text-align: left;
+    margin: 2px; /* Separate margin for expense-cost */
+}
+
+.expense-buttons {
+    flex: 0.6;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Expense Icon Styles */
+.expense-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.expense-icon.increase {
+    color: green;
+}
+
+.expense-icon.decrease {
+    color: rgb(98, 12, 12);
+}
+
+.expense-icon.delete {
+    background-color: rgba(245, 185, 229, 0);
+    color: rgba(211, 6, 6, 0.573);
+    border-radius: 5px;
+}
+
+
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .table thead {
+        display: block;
+    }
+
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+        width: 100%;
+        border: none; /* Remove the border */
+    }
+
+    .table tr {
+        margin-bottom: 10px;
+    }
+    .table th {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .table td {
+        text-align: right;
+        position: relative;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 40%;
+        padding-right: 10px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .expense-item {
+        display: flex;
+        justify-content: space-between; /* Distribute space evenly */
+        flex-direction: row;
+        align-items: center;
+        border: 1px solid #ffffff57; /* Optional border for clarity */
+        gap:2rem; /* Adjusted gap for mobile */
+    }
+
+    .expense-name {
+        flex: 1; /* Allow name to take up available space */
+    }
+    
+    .expense-cost {
+        flex: 1; /* Allow cost to take up available space */
+        text-align: right; /* Align cost text to the right */
+    }
+    
+    .expense-buttons {
+        display: flex; /* Use Flexbox for buttons */
+        gap: 2.5rem; /* Space between buttons */
+    }
+    
+    /* Optional: Icon styling */
+    .expense-icon {
+        cursor: pointer; /* Change cursor to pointer for icons */
+    }
+
+    .expense-icon.decrease, .expense-icon.increase {
+        margin-top: .5rem;
+    }
+
+    .header-box {
+        background:transparent;
+        color: rgb(36, 6, 6);
+        padding: 2px 1px 0 1px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        box-shadow: 0 15px 10px rgba(0, 0, 0, 0.308);
+        border: 1px solid rgba(16, 1, 44, 0);
+        height: 5rem;
+        width: 25rem;
+        
+    }
+
+    .container {
+        background: linear-gradient(45deg, #9575CD, #D1C4E9); /* Light purple gradient */
+        color: rgb(63, 1, 1);
+        padding: 9px 5px 0px 7px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; /* Adjusted for consistency */
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.548);
+    }
+
+    .budgetAllcCont {
+        width: 90%;
+        margin: 0 1rem 3rem 1.5rem;
+    }
+
+}

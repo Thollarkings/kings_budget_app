@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
+import './styles.css'; // Import the CSS file
 
 const Location = () => {
     const { dispatch } = useContext(AppContext);
@@ -11,29 +12,16 @@ const Location = () => {
         });
     };
 
-    const boxStyle = {
-        background: 'linear-gradient(45deg, #6a1b9a, black)',
-        color: 'white',
-        padding: '12px',
-        borderRadius: '10px',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'flex-start', // Corrected this line
-        maxWidth: '400px',
-        margin: '20px auto',
-        marginLeft: '20px'
-    };
-
     return (
-        <div style={boxStyle}>
-            <label htmlFor="Location">Select Currency:</label>
+        <div className="box">
+            <label htmlFor="Location" className="label">Select Currency:</label>
             <select name="Location" id="Location" onChange={event => changeLocation(event.target.value)}>
                 <option value="₦">(₦) Naira</option>
                 <option value="$">($) Dollars</option>
                 <option value="£">(£) Pounds</option>
                 <option value="₹">(₹) Rupees</option>
                 <option value="€">(€) Euro</option>
-                </select>
+            </select>
         </div>
     );
 };

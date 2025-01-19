@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles.css'; // Import the CSS file
 
 const Footer = () => {
     const footerStyle = {
@@ -16,7 +17,7 @@ const Footer = () => {
 
     return (
         <div style={footerStyle}>
-            <p>Thollarkings &copy; 2024</p>
+            <p id='footer'>Thollarkings &copy; 2024</p>
         </div>
     );
 };
