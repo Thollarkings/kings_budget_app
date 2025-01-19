@@ -1,6 +1,6 @@
 /* General Styles */
 .container {
-    background: linear-gradient(45deg, #9575CD, #D1C4E9); /* Light purple gradient */
+    background: linear-gradient(45deg, #9575CD, #D1C4E9);
     color: rgb(63, 1, 1);
     padding: 9px 5px 0px 7px;
     border-radius: 10px;
@@ -8,18 +8,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%; /* Adjusted for consistency */
+    width: 100%;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.548);
-}
-
-#footer {
+  }
+  
+  #footer {
     text-align: center;
     margin-left: 6rem;
-}
-
-
-/* Box Styles */
-.box {
+  }
+  
+  /* Box Styles */
+  .box {
     background: linear-gradient(45deg, #6a1b9a, black);
     color: white;
     padding: 15px;
@@ -27,28 +26,27 @@
     display: flex;
     max-width: 400px;
     margin: 20px auto;
-    
-}
-
-.box-budget {
-    padding: 20px; /* Override for Budget component */
+  }
+  
+  .box-budget {
+    padding: 20px;
     display: flex;
     align-items: center;
-}
-
-/* Header Box Style */
-.header-box {
-    background:transparent;
+  }
+  
+  /* Header Box Style */
+  .header-box {
+    background: transparent;
     color: rgb(0, 0, 0);
     padding: 20px 15px 0 15px;
     border-radius: 10px;
     margin-bottom: 30px;
     box-shadow: 0 15px 10px rgba(0, 0, 0, 0.308);
     border: 1px solid rgba(16, 1, 44, 0);
-    height: 5rem
- }
-
- .budgetAllcCont {
+    height: 5rem;
+  }
+  
+  .budgetAllcCont {
     background-color: #69078f00;
     color: rgb(63, 1, 1);
     padding: 9px 5px 0px 7px;
@@ -57,64 +55,73 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%; /* Adjusted for consistency */
+    width: 100%;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.548);
- }
-
- .costarea {
+  }
+  
+  .costarea {
     display: flex;
-}
-
-#inputGroupSelect02, #inputGroupSelect01 {
-    width: 10rem; /* Full width for mobile */
-    border-radius: .5rem;
+  }
+  
+  #inputGroupSelect02,
+  #inputGroupSelect01 {
+    width: 10rem;
+    border-radius: 0.3rem;
     height: 2rem;
     background-color: #d8c8e2;
-}
-
-#cost {
-    width: 10rem; /* Full width for mobile */
-    margin: 0 .1rem 0 .2rem;
-}
-
-.location {
-    margin: 0 0 0 1rem;
+    margin: 0 1.4rem 0 0;
+  }
+  
+  #cost {
+    width: 10rem;
+    margin: 0 0.1rem 0 0.2rem;
+  }
+  
+  .location {
+    margin: 0 0 0 0.1rem;
     font-size: 1.5rem;
-}
-
- .budgetAllcCont h5{
+  }
+  
+  .input-group-text {
+    width: 7rem;
+    border-radius: 0.3rem;
+    height: 2rem;
+  }
+  
+  .budgetAllcCont h5 {
     text-align: center;
- }
-
-/* Table Styles */
-.table {
-    width: 100%; /* Ensure the table takes full width */
-}
-
-.table th, .table td {
+  }
+  
+  /* Table Styles */
+  .table {
+    width: 100%;
+  }
+  
+  .table th,
+  .table td {
     padding: 2px;
     text-align: left;
-    border: none; /* Remove the border */
+    border: none;
     margin-right: 5px;
     color: black;
-}
-
-/* Label Styles */
-.label {
-    margin-bottom: 10px; /* Space for labels */
-    margin-right: 10px; /* For Budget component label */
-}
-
-/* Input Styles */
-.input {
+  }
+  
+  /* Label Styles */
+  .label {
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  
+  /* Input Styles */
+  .input {
     padding: 5px;
     border: none;
     border-radius: 5px;
     width: 100px;
-}
-
-/* Button Styles */
-.button {
+  }
+  
+  /* Button Styles */
+  .button {
     margin-left: 10px;
     padding: 5px 10px;
     border: none;
@@ -123,9 +130,9 @@
     border: 1px solid rgb(117, 71, 138);
     color: white;
     cursor: pointer;
-}
-
-.btn-button {
+  }
+  
+  .btn-button {
     margin-left: 10px;
     padding: 5px 10px;
     border: none;
@@ -134,15 +141,15 @@
     border: 1px solid rgb(255, 255, 255);
     color: white;
     cursor: pointer;
-}
-
-/* Warning Styles */
-.warning {
+  }
+  
+  /* Warning Styles */
+  .warning {
     color: yellow;
     margin-left: 10px;
-}
-
-.expense-item {
+  }
+  
+  .expense-item {
     background: linear-gradient(45deg, #9575CD, #D1C4E9);
     color: black;
     padding: 10px;
@@ -152,206 +159,208 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 15px; 
+    gap: 15px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.39);
     border: 1px solid rgba(224, 221, 230, 0.418);
-}
-
-.expense-name {
+  }
+  
+  .expense-name {
     flex: 0.2;
     text-align: left;
-    margin: 0 15px; 
-}
-
-.expense-cost {
+    margin: 0 15px;
+  }
+  
+  .expense-cost {
     flex: 0.3;
     text-align: left;
-    margin: 2px; 
-}
-
-.expense-buttons {
+    margin: 2px;
+  }
+  
+  .expense-buttons {
     flex: 0.6;
     text-align: left;
     display: flex;
     justify-content: space-between;
     gap: 20px;
-}
-
-
-.expense-icon {
+  }
+  
+  .expense-icon {
     font-size: 30px;
     cursor: pointer;
-}
-
-.expense-icon.increase {
+  }
+  
+  .expense-icon.increase {
     color: green;
-}
-
-.expense-icon.decrease {
+  }
+  
+  .expense-icon.decrease {
     color: rgb(98, 12, 12);
-}
-
-.expense-icon.delete {
+  }
+  
+  .expense-icon.delete {
     background-color: rgba(245, 185, 229, 0);
     color: rgba(211, 6, 6, 0.573);
     border-radius: 5px;
-}
-
-
-
-/* Mobile Styles */
-@media (max-width: 600px) {
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 600px) {
     .table thead {
-        display: block;
+      display: block;
     }
-
-    .table, .table tbody, .table tr, .table td {
-        display: block;
-        width: 100%;
-        border: none; /* Remove the border */
-    }
-
-    .table tr {
-        margin-bottom: 10px;
-    }
-    .table th {
-        text-align: center;
-        padding-top: 20px;
-    }
-
+  
+    .table,
+    .table tbody,
+    .table tr,
     .table td {
-        text-align: right;
-        position: relative;
+      display: block;
+      width: 100%;
+      border: none;
     }
-
+  
+    .table tr {
+      margin-bottom: 10px;
+    }
+  
+    .table th {
+      text-align: center;
+      padding-top: 20px;
+    }
+  
+    .table td {
+      text-align: right;
+      position: relative;
+    }
+  
     .table td::before {
-        content: attr(data-label);
-        position: absolute;
-        left: 10px;
-        width: 40%;
-        padding-right: 10px;
-        text-align: left;
-        font-weight: bold;
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      width: 40%;
+      padding-right: 10px;
+      text-align: left;
+      font-weight: bold;
     }
-
+  
     .expense-item {
-        display: flex;
-        justify-content: space-between; /* Distribute space evenly */
-        flex-direction: row;
-        align-items: center;
-        border: 1px solid #ffffff57; /* Optional border for clarity */
-        gap:2rem; /* Adjusted gap for mobile */
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      border: 1px solid #ffffff57;
+      gap: 2rem;
     }
-
+  
     .expense-name {
-        flex: 1; /* Allow name to take up available space */
+      flex: 1;
     }
-    
+  
     .expense-cost {
-        flex: 1; /* Allow cost to take up available space */
-        text-align: right; /* Align cost text to the right */
+      flex: 1;
+      text-align: right;
     }
-    
+  
     .expense-buttons {
-        display: flex; /* Use Flexbox for buttons */
-        gap: 2.5rem; /* Space between buttons */
+      display: flex;
+      gap: 2.5rem;
     }
-    
-    /* Optional: Icon styling */
+  
     .expense-icon {
-        cursor: pointer; /* Change cursor to pointer for icons */
+      cursor: pointer;
     }
-
-    .expense-icon.decrease, .expense-icon.increase {
-        margin-top: .5rem;
+  
+    .expense-icon.decrease,
+    .expense-icon.increase {
+      margin-top: 0.5rem;
     }
-
+  
     .header-box {
-        background:transparent;
-        color: rgb(36, 6, 6);
-        padding: 2px 1px 0 1px;
-        border-radius: 10px;
-        margin-bottom: 30px;
-        box-shadow: 0 15px 10px rgba(0, 0, 0, 0.308);
-        border: 1px solid rgba(16, 1, 44, 0);
-        height: 5rem;
-        width: 26rem;
+      background: transparent;
+      color: rgb(36, 6, 6);
+      padding: 2px 1px 0 1px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 15px 10px rgba(0, 0, 0, 0.308);
+      border: 1px solid rgba(16, 1, 44, 0);
+      height: 5rem;
+      width: 26rem;
     }
-
-.containers {
-    width: 25rem;
-}
-
-.budgetAllcCont {
-    display: block;
-    background-color: #69078f00;
-    border-radius: 8px; /* Rounded corners */
-    padding: 1rem; /* Inner padding */
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.541); /* Subtle shadow */
-    width: 25rem;
-}
-
-.row {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    
-}
-
-.input-group {
-    display: flex;
-    flex-direction: column; /* Stack input groups vertically */
-    align-items: center;
-    margin-bottom: 1rem; /* Space between input groups */
-    width: 40rem;
-    border-radius: 1rem;    
-}
-
-.input-group-prepend {
-    margin-top: 1rem;
-    border-radius: 1rem;   
-}
-
-
- #inputGroupSelect02, #inputGroupSelect01 {
-    width: 20rem; /* Full width for mobile */
-    border-radius: .5rem;
-    height: 2rem;
-    background-color: #d8c8e2;
-}
-
-.input-group-text {
-    width: 20rem; /* Full width for mobile */
-    border-radius: .5rem;
-    height: 2rem;
-}
-
-.location {
-    margin-top: 1rem;
-    margin-bottom: -1rem;
-    font-size: 1.5rem;
-    margin-right: .5rem;
-}
-
-.costarea {
-    display: flex;
-}
-
- #cost {
-    width: 15rem; /* Full width for mobile */
-    margin-top: 1rem; /* Space above each input */
-    border-radius: .3rem;
-}
-
-
-
-.btn-button {
-    color: white; /* Button text color */
-    border: none; /* Remove border */
-    padding: 0.5rem; /* Button padding */
-    cursor: pointer; /* Pointer cursor on hover */
-    width: 20rem; /* Full width for mobile */
-    margin-top: .5rem; /* Space above each input */
-    border-radius: .7rem;
-}
-
-}
+  
+    .containers {
+      width: 25rem;
+    }
+  
+    .budgetAllcCont {
+      display: block;
+      background-color: #69078f00;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 20px 20px rgba(0, 0, 0, 0.541);
+      width: 25rem;
+      
+    }
+  
+    .row {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1rem;
+      width: 40rem;
+      border-radius: 1rem;
+    }
+  
+    .input-group-prepend {
+      margin-top: 1rem;
+      border-radius: 1rem;
+    }
+  
+    #inputGroupSelect02,
+    #inputGroupSelect01 {
+      width: 20rem;
+      border-radius: 0.5rem;
+      height: 2rem;
+      background-color: #d8c8e2;
+      align-self: center;
+      margin: 0 0 0 0;
+      
+    }
+  
+    .input-group-text {
+      width: 20rem;
+      border-radius: 0.5rem;
+      height: 2rem;
+    }
+  
+    .location {
+      margin-top: 1rem;
+      margin-bottom: -1rem;
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+    }
+  
+    .costarea {
+      display: flex;
+    }
+  
+    #cost {
+      width: 15rem;
+      margin-top: 1rem;
+      border-radius: 0.3rem;
+    }
+  
+    .btn-button {
+      color: white;
+      border: none;
+      padding: 0.5rem;
+      cursor: pointer;
+      width: 20rem;
+      margin-top: 0.5rem;
+      border-radius: 0.7rem;
+    }
+  }
+  
