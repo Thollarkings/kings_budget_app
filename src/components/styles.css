@@ -134,7 +134,7 @@
     flex-wrap: wrap;
     gap: 15px; /* Added gap between columns */
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.39);
-    border: 1px solid rgba(16, 1, 44, 0.295);
+    border: 1px solid rgba(224, 221, 230, 0.418);
 }
 
 .expense-name {
