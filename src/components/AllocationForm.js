@@ -96,7 +96,8 @@ const AllocationForm = () => {
                         <option value="Add">Add</option>
                         <option value="Reduce">Reduce</option>
                     </select>
-
+                    <div className='costarea'>
+                    <span className="location">{Location}</span>
                     <input
                         required
                         type='number'
@@ -104,10 +105,11 @@ const AllocationForm = () => {
                         value={cost}
                         className='form-control'
                         onChange={(event) => setCost(event.target.value)}
-                        style={{ marginLeft: '1rem', width: '100px' }}
+                        
                     />
+                    </div>
 
-                    <span className="input-group-text">{Location}</span>
+                    
 
                     <button
                         className="btn-button"

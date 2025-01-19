@@ -256,25 +256,86 @@
         border: 1px solid rgba(16, 1, 44, 0);
         height: 5rem;
         width: 25rem;
-        
     }
 
-    .container {
-        background: linear-gradient(45deg, #9575CD, #D1C4E9); /* Light purple gradient */
-        color: rgb(63, 1, 1);
-        padding: 9px 5px 0px 7px;
-        border-radius: 10px;
-        margin-bottom: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%; /* Adjusted for consistency */
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.548);
-    }
+.containers {
+    width: 25rem;
+}
 
-    .budgetAllcCont {
-        width: 90%;
-        margin: 0 1rem 3rem 1.5rem;
-    }
+.budgetAllcCont {
+    display: block;
+    background-color: #69078f00;
+    border-radius: 8px; /* Rounded corners */
+    padding: 1rem; /* Inner padding */
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.541); /* Subtle shadow */
+    width: 25rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column; /* Stack input groups vertically */
+    align-items: center;
+    margin-bottom: 1rem; /* Space between input groups */
+    width: 40rem;
+    border-radius: 1rem;    
+}
+
+.input-group-prepend {
+    margin-top: 1rem;
+    border-radius: 1rem;   
+}
+
+
+.btn-button {
+
+}
+
+ #inputGroupSelect02, #inputGroupSelect01 {
+    width: 20rem; /* Full width for mobile */
+    border-radius: .5rem;
+    height: 2rem;
+    background-color: #d8c8e2;
+}
+
+.input-group-text {
+    width: 20rem; /* Full width for mobile */
+    border-radius: .5rem;
+    height: 2rem;
+}
+
+.location {
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+    font-size: 1.5rem;
+    margin-right: .5rem;
+}
+
+.costarea {
+    display: flex;
+}
+
+ #cost {
+    width: 15rem; /* Full width for mobile */
+    margin-top: 1rem; /* Space above each input */
+    border-radius: .3rem;
+}
+
+
+
+.btn-button {
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 0.5rem; /* Button padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 20rem; /* Full width for mobile */
+    margin-top: .5rem; /* Space above each input */
+    border-radius: .7rem;
+}
 
 }
