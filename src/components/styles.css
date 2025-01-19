@@ -10,6 +10,7 @@
     align-items: center;
     width: 100%;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.548);
+    font-weight: bold;
   }
   
   #footer {
@@ -118,6 +119,7 @@
     border: none;
     border-radius: 5px;
     width: 100px;
+    font-weight: bold;
   }
   
   /* Button Styles */
@@ -249,6 +251,7 @@
       align-items: center;
       border: 1px solid #ffffff57;
       gap: 2rem;
+      font-weight: bold;
     }
   
     .expense-name {
@@ -275,19 +278,24 @@
     }
   
     .header-box {
-      background: transparent;
-      color: rgb(36, 6, 6);
-      padding: 2px 1px 0 1px;
-      border-radius: 10px;
-      margin-bottom: 30px;
-      box-shadow: 0 15px 10px rgba(0, 0, 0, 0.308);
-      border: 1px solid rgba(16, 1, 44, 0);
-      height: 5rem;
-      width: 26rem;
+        background: transparent;
+        color: rgb(36, 6, 6);
+        padding: 2px 1px 0 1px;
+        border-radius: 10px;
+        box-shadow: 0 15px 10px rgba(0, 0, 0, 0.308);
+        border: 1px solid rgba(16, 1, 44, 0);
+        height: 5rem;
+        width: 99%;
     }
   
     .containers {
       width: 25rem;
+      font-weight: bold;
+    }
+
+    .container {
+        display: flex; /* or display: block; */
+        justify-content: center; /* For Flexbox */
     }
   
     .budgetAllcCont {
@@ -297,6 +305,7 @@
       padding: 1rem;
       box-shadow: 0 20px 20px rgba(0, 0, 0, 0.541);
       width: 25rem;
+      font-weight: bold;
       
     }
   
@@ -312,6 +321,7 @@
       margin-bottom: 1rem;
       width: 40rem;
       border-radius: 1rem;
+      font-weight: bold;
     }
   
     .input-group-prepend {
@@ -327,6 +337,7 @@
       background-color: #d8c8e2;
       align-self: center;
       margin: 0 0 0 0;
+
       
     }
   
@@ -334,6 +345,7 @@
       width: 20rem;
       border-radius: 0.5rem;
       height: 2rem;
+      font-weight: bold;
     }
   
     .location {
