@@ -61,6 +61,27 @@
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.548);
  }
 
+ .costarea {
+    display: flex;
+}
+
+#inputGroupSelect02, #inputGroupSelect01 {
+    width: 10rem; /* Full width for mobile */
+    border-radius: .5rem;
+    height: 2rem;
+    background-color: #d8c8e2;
+}
+
+#cost {
+    width: 10rem; /* Full width for mobile */
+    margin: 0 .1rem 0 .2rem;
+}
+
+.location {
+    margin: 0 0 0 1rem;
+    font-size: 1.5rem;
+}
+
  .budgetAllcCont h5{
     text-align: center;
  }
@@ -121,9 +142,8 @@
     margin-left: 10px;
 }
 
-/* Expense Item Styles */
 .expense-item {
-    background: linear-gradient(45deg, #9575CD, #D1C4E9); /* Light purple gradient */
+    background: linear-gradient(45deg, #9575CD, #D1C4E9);
     color: black;
     padding: 10px;
     border-radius: 10px;
@@ -132,7 +152,7 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 15px; /* Added gap between columns */
+    gap: 15px; 
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.39);
     border: 1px solid rgba(224, 221, 230, 0.418);
 }
@@ -140,13 +160,13 @@
 .expense-name {
     flex: 0.2;
     text-align: left;
-    margin: 0 15px; /* Separate margin for expense-name */
+    margin: 0 15px; 
 }
 
 .expense-cost {
     flex: 0.3;
     text-align: left;
-    margin: 2px; /* Separate margin for expense-cost */
+    margin: 2px; 
 }
 
 .expense-buttons {
@@ -157,7 +177,7 @@
     gap: 20px;
 }
 
-/* Expense Icon Styles */
+
 .expense-icon {
     font-size: 30px;
     cursor: pointer;
@@ -255,7 +275,7 @@
         box-shadow: 0 15px 10px rgba(0, 0, 0, 0.308);
         border: 1px solid rgba(16, 1, 44, 0);
         height: 5rem;
-        width: 25rem;
+        width: 26rem;
     }
 
 .containers {
@@ -291,10 +311,6 @@
     border-radius: 1rem;   
 }
 
-
-.btn-button {
-
-}
 
  #inputGroupSelect02, #inputGroupSelect01 {
     width: 20rem; /* Full width for mobile */
