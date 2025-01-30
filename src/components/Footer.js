@@ -9,9 +9,8 @@ const Footer = () => {
         width: '100%',             // Makes the footer span the full width of the page
         backgroundColor: '#6a1b9a', // Sets the background color
         color: 'white',            // Sets the text color
-        textAlign: 'right',        // Aligns the text to the right
+        textAlign: 'center',        // Aligns the text to the right
         padding: '3px 0',         // Adds padding to the top and bottom of the footer
-        paddingRight: '100px',      // Adds padding to the right side of the footer text
         borderTop: '7px solid white', // Adds a white line on top of the footer
     };
 

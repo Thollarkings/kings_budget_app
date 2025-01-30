@@ -13,7 +13,6 @@ const ExpenseList = () => {
                     <thead>
                         <tr>
                             <th >The allocated budget can be increased by 10 or decreased by 10 by clicking the green up arrows or the red down arrows.</th>
-
                         </tr>
                     </thead>
                 </table>

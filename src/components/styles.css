@@ -44,7 +44,7 @@
     margin-bottom: 30px;
     box-shadow: 0 15px 10px rgba(0, 0, 0, 0.308);
     border: 1px solid rgba(16, 1, 44, 0);
-    height: 5rem;
+    height: auto;
   }
   
   .budgetAllcCont {
@@ -97,8 +97,21 @@
   .table {
     width: 100%;
   }
-  
-  .table th,
+
+  .header-box th {
+    width: 100%;
+    text-align: center;
+    padding: 14px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #000000;
+    font-weight: bold;
+    box-sizing: border-box;
+    max-width: 800px;
+    margin: 0 auto;
+    word-wrap: break-word;
+  }
+    
   .table td {
     padding: 2px;
     text-align: left;
@@ -107,13 +120,13 @@
     color: black;
   }
   
-  /* Label Styles */
+
   .label {
     margin-bottom: 10px;
     margin-right: 10px;
   }
   
-  /* Input Styles */
+
   .input {
     padding: 5px;
     border: none;
@@ -122,7 +135,7 @@
     font-weight: bold;
   }
   
-  /* Button Styles */
+  
   .button {
     margin-left: 10px;
     padding: 5px 10px;
@@ -145,7 +158,7 @@
     cursor: pointer;
   }
   
-  /* Warning Styles */
+
   .warning {
     color: yellow;
     margin-left: 10px;
@@ -204,175 +217,102 @@
     color: rgba(211, 6, 6, 0.573);
     border-radius: 5px;
   }
-  
-  /* Mobile Styles */
   @media (max-width: 600px) {
-    .table thead {
-      display: block;
-    }
-  
-    .table,
-    .table tbody,
-    .table tr,
-    .table td {
-      display: block;
-      width: 100%;
-      border: none;
-    }
-  
-    .table tr {
-      margin-bottom: 10px;
-    }
-  
-    .table th {
-      text-align: center;
-      padding-top: 20px;
-    }
-  
-    .table td {
-      text-align: right;
-      position: relative;
-    }
-  
-    .table td::before {
-      content: attr(data-label);
-      position: absolute;
-      left: 10px;
-      width: 40%;
-      padding-right: 10px;
-      text-align: left;
-      font-weight: bold;
-    }
-  
-    .expense-item {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      align-items: center;
-      border: 1px solid #ffffff57;
-      gap: 2rem;
-      font-weight: bold;
-    }
-  
-    .expense-name {
-      flex: 1;
-    }
-  
-    .expense-cost {
-      flex: 1;
-      text-align: right;
-    }
-  
-    .expense-buttons {
-      display: flex;
-      gap: 2.5rem;
-    }
-  
-    .expense-icon {
-      cursor: pointer;
-    }
-  
-    .expense-icon.decrease,
-    .expense-icon.increase {
-      margin-top: 0.5rem;
+
+    .container, .budgetAllcCont {
+      width: 95% !important;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10px;
     }
   
     .header-box {
-        background: transparent;
-        color: rgb(36, 6, 6);
-        padding: 2px 1px 0 1px;
-        border-radius: 10px;
-        box-shadow: 0 15px 10px rgba(0, 0, 0, 0.308);
-        border: 1px solid rgba(16, 1, 44, 0);
-        height: 5rem;
-        width: 99%;
-    }
-  
-    .containers {
-      width: 25rem;
-      font-weight: bold;
-    }
-
-    .container {
-        display: flex; /* or display: block; */
-        justify-content: center; /* For Flexbox */
-    }
-  
-    .budgetAllcCont {
-      display: block;
-      background-color: #69078f00;
-      border-radius: 8px;
-      padding: 1rem;
-      box-shadow: 0 20px 20px rgba(0, 0, 0, 0.541);
-      width: 25rem;
-      font-weight: bold;
-      
-    }
-  
-    .row {
-      display: flex;
-      flex-direction: column;
+      width: 95%;
+      margin: 0 auto 20px;
+      padding: 5px;
+      text-align: center;
     }
   
     .input-group {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 1rem;
-      width: 40rem;
-      border-radius: 1rem;
-      font-weight: bold;
-    }
-  
-    .input-group-prepend {
-      margin-top: 1rem;
-      border-radius: 1rem;
+      width: 100% !important;
+      margin: 0 0 1rem 0;
     }
   
     #inputGroupSelect02,
-    #inputGroupSelect01 {
-      width: 20rem;
-      border-radius: 0.5rem;
-      height: 2rem;
-      background-color: #d8c8e2;
-      align-self: center;
-      margin: 0 0 0 0;
-
-      
-    }
-  
-    .input-group-text {
-      width: 20rem;
-      border-radius: 0.5rem;
-      height: 2rem;
-      font-weight: bold;
-    }
-  
-    .location {
-      margin-top: 1rem;
-      margin-bottom: -1rem;
-      font-size: 1.5rem;
-      margin-right: 0.5rem;
+    #inputGroupSelect01,
+    .input-group-text,
+    #cost,
+    .btn-button {
+      width: 100% !important;
+      margin: 5px 0 !important;
     }
   
     .costarea {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .expense-item {
+      background: linear-gradient(45deg, #9575CD, #D1C4E9);
+      color: black;
+      padding: 12px;
+      border-radius: 10px;
+      margin-bottom: 10px;
       display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      gap: 15px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 100%;
     }
-  
-    #cost {
-      width: 15rem;
-      margin-top: 1rem;
-      border-radius: 0.3rem;
+    
+    .expense-name {
+      flex: 1 1 40%;
+      font-size: 0.9rem;
+      min-width: 100px;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
-  
-    .btn-button {
-      color: white;
-      border: none;
-      padding: 0.5rem;
+    
+    .expense-cost {
+      flex: 1 1 30%;
+      font-size: 0.9rem;
+      text-align: right;
+      padding-right: 8px;
+    }
+    
+    .expense-buttons {
+      flex: 1 1 30%;
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      min-width: 120px;
+    }
+    
+    .expense-icon {
+      font-size: 1.2em;
       cursor: pointer;
-      width: 20rem;
-      margin-top: 0.5rem;
-      border-radius: 0.7rem;
+      padding: 4px;
+      transition: transform 0.2s;
+    }
+    
+    .expense-icon.increase { color: #2e7d32; }
+    .expense-icon.decrease { color: #530f0f; }
+    .expense-icon.delete { color: #d32f2f; margin-top: -5px; }
+    .expense-icon {font-size: 24px; }
+  
+    /* Adjust button sizes */
+    .btn-button {
+      padding: 8px 12px;
+      font-size: 0.9em;
+    }
+  
+    #footer {
+      margin-left: 0;
+      padding: 5px;
+      width: 100%;
     }
   }
+
   
