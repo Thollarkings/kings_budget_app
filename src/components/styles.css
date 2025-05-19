@@ -19,7 +19,7 @@
 
 /* Box Styles */
 .box {
-    background: gray;
+     background: linear-gradient(135deg, #818cf8,lightgray, #818cf8);
     backdrop-filter: blur(10px);
     color: white;
     padding: 1.5rem;
