@@ -19,7 +19,7 @@
 
 /* Box Styles */
 .box {
-    background: blueviolet;
+    background: gray;
     backdrop-filter: blur(10px);
     color: white;
     padding: 1.5rem;
