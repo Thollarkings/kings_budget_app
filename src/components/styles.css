@@ -22,7 +22,7 @@
      background: linear-gradient(135deg, #818cf8, indigo, #818cf8);
     backdrop-filter: blur(10px);
     color: white;
-  border: solid indigo;
+  border: solid indigo 1px;
     padding: 1.5rem;
     border-radius: 1rem;
     display: flex;
