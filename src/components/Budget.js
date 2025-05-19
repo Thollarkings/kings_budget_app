@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { AppContext } from '../context/AppContext';
-import './styles.css'; // Import the CSS file
+import './styles.css';
 
 const Budget = () => {
     const { budget, expenses, dispatch, Location } = useContext(AppContext);
@@ -11,42 +11,47 @@ const Budget = () => {
 
     const handleBudgetChange = (event) => {
         setNewBudget(event.target.value);
-        setWarning(''); // Clear warning when input changes
+        setWarning('');
     };
 
     const handleBudgetSubmit = () => {
         const value = parseInt(newBudget);
         if (isNaN(value)) {
             alert("Please enter a valid number");
-            setNewBudget(budget); // Reset to current budget
+            setNewBudget(budget);
             return;
         }
         if (value <= 20000 && value >= totalExpenses) {
             dispatch({ type: 'SET_BUDGET', payload: value });
         } else if (value < totalExpenses) {
             alert(`Value cannot be less than the total expenses of ${Location}${totalExpenses}`);
-            setNewBudget(budget); // Reset to current budget
+            setNewBudget(budget);
         } else {
             setWarning(`Value cannot exceed ${Location}20000`);
-            setNewBudget(budget); // Reset to current budget
+            setNewBudget(budget);
         }
     };
 
     return (
-        <div className="box">
-            <span className="label">Budget: {Location}{budget}</span>
-            <input
-                type="number"
-                step="10"
-                max="20000"
-                value={newBudget}
-                onChange={handleBudgetChange}
-                className="input" // Use the CSS class
-            />
-            <button onClick={handleBudgetSubmit} className="button"> {/* Use the CSS class */}
-                Set Budget
-            </button>
-            {warning && <div className="warning">{warning}</div>} {/* Use the CSS class */}
+        <div className="modern-box">
+            <div className="modern-box-content">
+                <div className="modern-box-header">Budget</div>
+                <div className="modern-box-value">
+                    <span className="currency-symbol">{Location}</span>
+                    <input
+                        type="number"
+                        step="10"
+                        max="20000"
+                        value={newBudget}
+                        onChange={handleBudgetChange}
+                        className="modern-box-input"
+                    />
+                </div>
+                <button onClick={handleBudgetSubmit} className="modern-box-button">
+                    Set Budget
+                </button>
+            </div>
+            {warning && <div className="modern-box-warning">{warning}</div>}
         </div>
     );
 };
