@@ -8,11 +8,10 @@ const ExpenseItem = (props) => {
     const { dispatch, Location } = useContext(AppContext);
 
     const handleDeleteExpense = () => {
-        // Confirm deletion with the user
         if (window.confirm(`Are you sure you want to delete the expense for ${props.name}?`)) {
             dispatch({
                 type: 'DELETE_EXPENSE',
-                payload: { id: props.id }, // Ensure you pass the id as an object
+                payload: { id: props.id },
             });
         }
     };
@@ -42,32 +41,27 @@ const ExpenseItem = (props) => {
     };
 
     return (
-        <tr>
-            <td colSpan="4">
-                <div className="expense-item">
-                    <div className="expense-name">{props.name}</div>
-                    <div className="expense-cost">{Location}{props.cost}</div>
-                    <div className="expense-buttons">
-                        <FaAngleDoubleUp
-                            onClick={() => increaseAllocation(props.name, 10)} // You can change the amount here
-                            className="expense-icon increase"
-                            aria-label={`Increase allocation for ${props.name}`}
-                        />
-                        <FaAngleDoubleDown
-                            onClick={() => reduceAllocation(props.name, 10)} // You can change the amount here
-                            className="expense-icon decrease"
-                            aria-label={`Reduce allocation for ${props.name}`}
-                        />
-                        <TiDelete
-                            size='1.5em'
-                            onClick={handleDeleteExpense}
-                            className="expense-icon delete"
-                            aria-label={`Delete ${props.name} expense`}
-                        />
-                    </div>
-                </div>
-            </td>
-        </tr>
+        <div className="expense-item">
+            <div className="expense-name">{props.name}</div>
+            <div className="expense-cost">{Location}{props.cost}</div>
+            <div className="expense-buttons">
+                <FaAngleDoubleUp
+                    onClick={() => increaseAllocation(props.name, 10)}
+                    className="expense-icon increase"
+                    aria-label={`Increase allocation for ${props.name}`}
+                />
+                <FaAngleDoubleDown
+                    onClick={() => reduceAllocation(props.name, 10)}
+                    className="expense-icon decrease"
+                    aria-label={`Reduce allocation for ${props.name}`}
+                />
+                <TiDelete
+                    onClick={handleDeleteExpense}
+                    className="expense-icon delete"
+                    aria-label={`Delete ${props.name} expense`}
+                />
+            </div>
+        </div>
     );
 };
 

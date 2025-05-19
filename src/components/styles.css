@@ -41,7 +41,7 @@ button {
 /* Expense List Styles */
 .expense-list-container {
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 2rem auto;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
@@ -72,6 +72,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 100%;
 }
 
 .no-expenses {
@@ -94,12 +95,14 @@ button {
 .expense-item {
     background: white;
     border-radius: 0.75rem;
-    padding: 1.25rem;
-    display: flex;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
     align-items: center;
-    justify-content: space-between;
+    gap: 2rem;
     transition: all 0.3s ease;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 .expense-item:hover {
@@ -111,25 +114,29 @@ button {
     font-weight: 500;
     color: #1a1a1a;
     font-size: 1.1rem;
+    text-align: left;
 }
 
 .expense-cost {
     font-weight: 600;
     color: #1a1a1a;
     font-size: 1.1rem;
+    text-align: center;
 }
 
 .expense-buttons {
     display: flex;
-    gap: 1rem;
+    justify-content: flex-end;
+    gap: 3rem;
     align-items: center;
 }
 
 .expense-icon {
-    padding: 0.5rem;
+    padding: 0.75rem;
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.2s ease;
+    font-size: 1.5rem;
 }
 
 .expense-icon.increase {
@@ -255,13 +262,19 @@ button {
     }
 
     .expense-item {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         gap: 1rem;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .expense-name {
         text-align: center;
     }
 
     .expense-buttons {
         justify-content: center;
+        gap: 2rem;
     }
 
     .allocation-form {
