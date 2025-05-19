@@ -17,6 +17,11 @@
     margin-left: 6rem;
 }
 
+button {
+  background: blue;
+  border-radius: 2px;
+}
+
 /* Box Styles */
 .box {
      background: linear-gradient(135deg, #818cf8, indigo, #818cf8);
