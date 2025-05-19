@@ -1,40 +1,37 @@
 import React, { useContext } from 'react';
 import ExpenseItem from './ExpenseItem';
 import { AppContext } from '../context/AppContext';
-import './styles.css'; // Import the CSS file
+import './styles.css';
 
 const ExpenseList = () => {
     const { expenses } = useContext(AppContext);
 
     return (
-        <div>
-            <div className="header-box">
-                <table className='table'>
-                    <thead>
-                        <tr>
-                            <th >The allocated budget can be increased by 10 or decreased by 10 by clicking the green up arrows or the red down arrows.</th>
-                        </tr>
-                    </thead>
-                </table>
+        <div className="expense-list-container">
+            <div className="expense-list-header">
+                <h3>Department Allocations</h3>
+                <p className="expense-list-info">
+                    Use the arrows to adjust department budgets by ±10
+                </p>
             </div>
-            <table className='table'>
-                <tbody>
-                    {expenses.length > 0 ? (
-                        expenses.map((expense) => (
-                            <ExpenseItem 
-                                id={expense.id} 
-                                key={expense.id} 
-                                name={expense.name} 
-                                cost={expense.cost} 
-                            />
-                        ))
-                    ) : (
-                        <tr>
-                            <td colSpan="5" style={{ textAlign: 'center' }}>No expenses found.</td>
-                        </tr>
-                    )}
-                </tbody>
-            </table>
+            
+            <div className="expense-list">
+                {expenses.length > 0 ? (
+                    expenses.map((expense) => (
+                        <ExpenseItem 
+                            id={expense.id} 
+                            key={expense.id} 
+                            name={expense.name} 
+                            cost={expense.cost} 
+                        />
+                    ))
+                ) : (
+                    <div className="no-expenses">
+                        <p>No departments added yet</p>
+                        <p className="no-expenses-sub">Add a department to get started</p>
+                    </div>
+                )}
+            </div>
         </div>
     );
 };
