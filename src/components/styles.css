@@ -1,0 +1,397 @@
+/* General Styles */
+.container {
+    background: linear-gradient(135deg, #818cf8,lightgray, #818cf8);
+    color: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Modern Box Styles */
+.modern-box {
+    background: linear-gradient(135deg, #818cf8, indigo, #818cf8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.modern-box:hover {
+    transform: translateY(-2px);
+}
+
+.modern-box-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.modern-box-header {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.modern-box-value {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.currency-symbol {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+.amount {
+    font-size: 1.5rem;
+}
+
+.modern-box-input {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: white;
+    font-size: 1.25rem;
+    width: 150px;
+    transition: all 0.2s ease;
+}
+
+.modern-box-input:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.modern-box-button {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.modern-box-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+.modern-box-select {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.modern-box-select:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.modern-box-warning {
+    color: #fcd34d;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+#footer {
+    text-align: center;
+    margin-left: 6rem;
+}
+
+button {
+    background: lightblue;
+    border-radius: 8px;
+}
+
+/* Box Styles */
+.box {
+    background: linear-gradient(135deg, #818cf8, indigo, #818cf8);
+    backdrop-filter: blur(10px);
+    color: white;
+    border: solid indigo 1px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 1rem auto;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Expense List Styles */
+.expense-list-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.expense-list-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+}
+
+.expense-list-header h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+}
+
+.expense-list-info {
+    color: #4a5568;
+    font-size: 0.95rem;
+}
+
+.expense-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.no-expenses {
+    text-align: center;
+    padding: 3rem 0;
+    color: #4a5568;
+}
+
+.no-expenses p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.no-expenses-sub {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Expense Item Styles */
+.expense-item {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
+    align-items: center;
+    gap: 2rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.expense-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.expense-name {
+    font-weight: 500;
+    color: #1a1a1a;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.expense-cost {
+    font-weight: 600;
+    color: #1a1a1a;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.expense-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3rem;
+    align-items: center;
+}
+
+.expense-icon {
+    padding: 0.75rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 1.5rem;
+}
+
+.expense-icon.increase {
+    color: #059669;
+    background: rgba(5, 150, 105, 0.1);
+}
+
+.expense-icon.decrease {
+    color: #dc2626;
+    background: rgba(220, 38, 38, 0.1);
+}
+
+.expense-icon.delete {
+    color: #6b7280;
+    background: rgba(107, 114, 128, 0.1);
+}
+
+.expense-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Allocation Form Styles */
+.allocation-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.allocation-form {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.department-input-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.modern-select,
+.modern-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.modern-select:focus,
+.modern-input:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+.modern-button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.modern-button.add-dept {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.modern-button.submit {
+    background: #4f46e5;
+    color: #ffffff;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.modern-button:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.modern-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.amount-input-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.currency {
+    font-size: 1.25rem;
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .expense-list-container {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .expense-item {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .expense-name {
+        text-align: center;
+    }
+
+    .expense-buttons {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .allocation-form {
+        padding: 1.5rem;
+    }
+
+    .department-input-group {
+        flex-direction: column;
+    }
+
+    .modern-button.add-dept {
+        width: 100%;
+    }
+}
