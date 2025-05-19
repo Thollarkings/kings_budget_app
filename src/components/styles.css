@@ -12,6 +12,112 @@
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
+/* Modern Box Styles */
+.modern-box {
+    background: linear-gradient(135deg, #818cf8, indigo, #818cf8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.modern-box:hover {
+    transform: translateY(-2px);
+}
+
+.modern-box-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.modern-box-header {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.modern-box-value {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.currency-symbol {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+.amount {
+    font-size: 1.5rem;
+}
+
+.modern-box-input {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: white;
+    font-size: 1.25rem;
+    width: 150px;
+    transition: all 0.2s ease;
+}
+
+.modern-box-input:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.modern-box-button {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.modern-box-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+.modern-box-select {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.modern-box-select:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.modern-box-warning {
+    color: #fcd34d;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
 #footer {
     text-align: center;
     margin-left: 6rem;

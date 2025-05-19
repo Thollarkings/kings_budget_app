@@ -52,6 +52,7 @@ const Budget = () => {
                 </button>
             </div>
             {warning && <div className="modern-box-warning">{warning}</div>}
+            }
         </div>
     );
 };
